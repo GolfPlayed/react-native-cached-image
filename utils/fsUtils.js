@@ -94,7 +94,8 @@ module.exports = {
             activeDownloads[toFile] = ensurePath(toFile)
                 .then(() => RNFetchBlob
                     .config({
-                        path: tmpFile
+                        path: tmpFile,
+                        timeout: 500000
                     })
                     .fetch('GET', fromUrl, headers)
                     .then(res => {
