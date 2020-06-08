@@ -5,6 +5,7 @@ const React = require('react');
 const ReactNative = require('react-native');
 
 const PropTypes = require('prop-types');
+const NetInfo = require('@react-native-community/netinfo')
 
 const ImageCacheManagerOptionsPropTypes = require('./ImageCacheManagerOptionsPropTypes');
 
@@ -16,7 +17,6 @@ const {
     View,
     ImageBackground,
     ActivityIndicator,
-    NetInfo,
     Platform,
     StyleSheet,
 } = ReactNative;
